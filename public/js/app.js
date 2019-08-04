@@ -11,6 +11,7 @@ form.addEventListener('submit', (e)=>{
     var location = search.value
     place.style.color = "black";
     place.textContent = "Loading..."
+    one.textContent = ''
     two.textContent = ''
     three.textContent = ''
 
