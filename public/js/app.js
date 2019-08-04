@@ -6,7 +6,6 @@ const one = document.querySelector('#One')
 const two = document.querySelector('#Two')
 const three = document.querySelector('#Three')
 
-
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
     var location = search.value
