@@ -83,6 +83,4 @@ app.get('/*', (req, res)=>{
     res.status(404).render('404',{error, title : "404", name: "Abhijeet"})
 })
 
-app.listen(port,()=>{
-    console.log("Server Running on localhost"+port)
-})
+app.listen(port,()=>{})
