@@ -6,6 +6,7 @@ const info = require('./utils/info')
 
 //set up static dir
 const app = express()
+const port = process.env.PORT || 3000
 app.use(express.static(path.join(__dirname,'../public/')))
 
 //Setup handlebars
@@ -82,6 +83,6 @@ app.get('/*', (req, res)=>{
     res.status(404).render('404',{error, title : "404", name: "Abhijeet"})
 })
 
-app.listen(3000,()=>{
-    console.log("Server Running on localhost:3000")
+app.listen(port,()=>{
+    console.log("Server Running on localhost"+port)
 })
